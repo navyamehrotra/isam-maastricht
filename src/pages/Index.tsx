@@ -43,11 +43,11 @@ export default function Index() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground">
       <Navbar />
 
       {/* ── Hero ── */}
-      <section className="relative min-h-screen flex items-end overflow-hidden">
+      <section className="relative min-h-screen flex items-end overflow-hidden" style={{ clipPath: "inset(0)" }}>
         {/* Parallax background glow */}
         <div ref={bgRef} className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-[120px] opacity-20"

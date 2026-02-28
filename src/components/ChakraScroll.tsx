@@ -170,14 +170,14 @@ export default function ChakraScroll() {
   useEffect(() => {
     const handleScroll = () => {
       if (!sectionRef.current) return;
-      const rect = sectionRef.current.getBoundingClientRect();
+      const { top } = sectionRef.current.getBoundingClientRect();
       const sectionH = sectionRef.current.offsetHeight - window.innerHeight;
-      const scrolled = -rect.top;
-      const p = Math.max(0, Math.min(1, scrolled / sectionH));
-      setProgress(p);
+      const scrolled = -top;
+      setProgress(Math.max(0, Math.min(1, scrolled / sectionH)));
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
+    // Run once on mount after layout
+    requestAnimationFrame(handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

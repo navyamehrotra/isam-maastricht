@@ -13,12 +13,12 @@ export default function Footer() {
                 <div className="w-3 h-3 rounded-full bg-primary/80" />
               </div>
               <div>
-                <p className="font-display font-bold text-foreground text-sm">ISAM</p>
+                <p className="font-display font-bold text-foreground text-sm">ISA</p>
                 <p className="font-body text-muted-foreground text-xs tracking-widest uppercase">Maastricht</p>
               </div>
             </div>
             <p className="font-body text-muted-foreground text-sm leading-relaxed">
-              Indian Student Association Maastricht — your home away from home at Maastricht University.
+              Indian Student Association Maastricht (ISA) — your home away from home at Maastricht University.
             </p>
             {/* Indian flag stripe accent */}
             <div className="flex gap-1 h-1 w-16 overflow-hidden rounded-full">
@@ -68,7 +68,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="font-body text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Indian Student Association Maastricht. All rights reserved.
+            © {new Date().getFullYear()} Indian Student Association Maastricht (ISA). All rights reserved.
           </p>
           <p className="font-body text-xs text-muted-foreground">
             Celebrating culture, building community.

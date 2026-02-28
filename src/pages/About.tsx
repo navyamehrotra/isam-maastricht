@@ -28,7 +28,7 @@ export default function About() {
           </h1>
         </div>
         <p className="font-body text-muted-foreground text-lg mt-6 max-w-2xl leading-relaxed" data-reveal data-delay="150">
-          ISAM is Maastricht University's Indian student community — a place to find culture, friendship, and a little piece of home in the heart of Europe.
+          ISA is Maastricht University's Indian student community — a place to find culture, friendship, and a little piece of home in the heart of Europe.
         </p>
       </section>
 
@@ -41,7 +41,7 @@ export default function About() {
               Born from a simple idea: no student should feel far from home.
             </h2>
             <p className="font-body text-muted-foreground leading-relaxed">
-              ISAM was founded by a group of Indian students who arrived in Maastricht and felt the gap — no Diwali, no Holi, no one to make chai with at midnight before exams. So they built what was missing.
+              ISA was founded by a group of Indian students who arrived in Maastricht and felt the gap — no Diwali, no Holi, no one to make chai with at midnight before exams. So they built what was missing.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed">
               Today we're a growing community of students from every corner of India, united by shared culture and a love for building something meaningful together.

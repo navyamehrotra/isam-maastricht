@@ -8,7 +8,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 type Status = "idle" | "loading" | "success";
 
 const perks = [
-  "Access to all ISAM events (Diwali, Holi, cultural nights)",
+  "Access to all ISA events (Diwali, Holi, cultural nights)",
   "Monthly social meetups and networking",
   "Career panels and alumni connections",
   "A community of 100+ Indian students",
@@ -54,7 +54,7 @@ export default function Join() {
           <p className="section-label mb-4">Join Us</p>
           <h1 className="font-display font-black text-foreground leading-tight"
             style={{ fontSize: "clamp(3rem, 7vw, 6rem)" }}>
-            Be Part of <span className="gradient-text">ISAM.</span>
+            Be Part of <span className="gradient-text">ISA.</span>
           </h1>
         </div>
         <p className="font-body text-muted-foreground text-lg mt-6 max-w-xl leading-relaxed" data-reveal data-delay="150">
@@ -91,7 +91,7 @@ export default function Join() {
               <div className="flex items-start gap-4 p-10 border border-primary/30 bg-card rounded-xl">
                 <CheckCircle size={24} className="flex-shrink-0 mt-0.5" style={{ color: "hsl(28 100% 55%)" }} />
                 <div>
-                  <p className="font-display font-bold text-foreground text-2xl mb-2">Welcome to ISAM!</p>
+                  <p className="font-display font-bold text-foreground text-2xl mb-2">Welcome to ISA!</p>
                   <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-sm">
                     We've received your details and will be in touch soon with everything you need to get started.
                   </p>
@@ -139,7 +139,7 @@ export default function Join() {
                 <button type="submit" disabled={status === "loading"}
                   className="inline-flex items-center gap-2 font-body font-semibold text-xs tracking-widest uppercase px-8 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
                   style={{ background: "hsl(28 100% 55%)", color: "hsl(20 18% 5%)" }}>
-                  {status === "loading" ? "Submitting..." : <> Join ISAM <ArrowRight size={13} /> </>}
+                  {status === "loading" ? "Submitting..." : <> Join ISA <ArrowRight size={13} /> </>}
                 </button>
               </form>
             )}

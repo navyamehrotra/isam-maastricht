@@ -39,7 +39,7 @@ export default function Navbar() {
             </div>
           </div>
           <div>
-            <span className="font-display font-bold text-foreground text-sm leading-none block">ISAM</span>
+            <span className="font-display font-bold text-foreground text-sm leading-none block">ISA</span>
             <span className="font-body text-muted-foreground text-xs tracking-widest uppercase leading-none">Maastricht</span>
           </div>
         </Link>

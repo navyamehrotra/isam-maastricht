@@ -121,7 +121,7 @@ export default function Events() {
           </h1>
         </div>
         <p className="font-body text-muted-foreground text-lg mt-6 max-w-xl leading-relaxed" data-reveal data-delay="150">
-          From Diwali to career panels — there's always something happening at ISAM.
+          From Diwali to career panels — there's always something happening at ISA.
         </p>
       </section>
 

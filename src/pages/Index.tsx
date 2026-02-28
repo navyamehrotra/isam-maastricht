@@ -128,7 +128,7 @@ export default function Index() {
             <Link to="/join"
               className="inline-flex items-center gap-2 bg-primary text-[hsl(20_18%_5%)] font-body font-semibold text-xs tracking-widest uppercase px-8 py-4 rounded-lg hover:opacity-90 transition-opacity"
             >
-              Join ISAM <ArrowRight size={14} />
+              Join ISA <ArrowRight size={14} />
             </Link>
             <Link to="/events"
               className="inline-flex items-center gap-2 border border-border text-muted-foreground font-body text-xs tracking-widest uppercase px-8 py-4 rounded-lg hover:border-primary/40 hover:text-foreground transition-all"
@@ -233,7 +233,7 @@ export default function Index() {
           <Link to="/join"
             className="inline-flex items-center gap-2 bg-primary text-[hsl(20_18%_5%)] font-body font-semibold text-xs tracking-widest uppercase px-10 py-4 rounded-lg hover:opacity-90 transition-opacity"
           >
-            Join ISAM Today <ArrowRight size={14} />
+            Join ISA Today <ArrowRight size={14} />
           </Link>
         </div>
       </section>

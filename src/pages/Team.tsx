@@ -19,19 +19,19 @@ const board = [
   {
     name: "Nishan Mistry",
     role: "Treasurer",
-    photo: null,
+    photo: "/team/nishan.jpeg",
     color: "hsl(160 55% 38%)",
   },
   {
     name: "Sitanshu Puranum",
     role: "Head of Cultural Events",
-    photo: null,
+    photo: "/team/sitanshu.jpeg",
     color: "hsl(28 100% 55%)",
   },
   {
     name: "Marmik Dubey",
     role: "Head of Special Events",
-    photo: null,
+    photo: "/team/marmik.jpeg",
     color: "hsl(43 85% 52%)",
   },
 ];
@@ -41,7 +41,7 @@ const teams = [
   {
     name: "Marketing Team",
     head: "Anvitha Subbaraman",
-    photos: ["/team/marketing-team-a.jpeg", "/team/marketing-team-b.jpeg"],
+    photos: ["/team/marketing-team-b.jpeg"],
     color: "hsl(43 85% 52%)",
     desc: "Crafting the ISA story — from social media to event campaigns, they make sure the world knows we exist.",
   },

@@ -89,7 +89,7 @@ function BoardCard({ member, i }: { member: typeof board[0]; i: number }) {
         )}
         {/* Gradient overlay at bottom */}
         <div className="absolute inset-x-0 bottom-0 h-24 pointer-events-none"
-          style={{ background: "linear-gradient(to top, hsl(20 14% 8%), transparent)" }} />
+          style={{ background: "linear-gradient(to top, hsl(var(--background)), transparent)" }} />
       </div>
 
       {/* Info */}

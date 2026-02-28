@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      scrolled ? "bg-[hsl(20_18%_5%/0.95)] backdrop-blur-md border-b border-border" : "bg-transparent"
+      scrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
 
@@ -52,7 +52,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link to="/join"
-            className="font-body text-xs tracking-widest uppercase px-5 py-2 border border-primary text-primary hover:bg-primary hover:text-[hsl(20_18%_5%)] transition-all duration-200 rounded-lg"
+            className="font-body text-xs tracking-widest uppercase px-5 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg"
           >
             Join Us
           </Link>
@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-[hsl(20_18%_5%/0.98)] backdrop-blur-md border-b border-border">
+        <div className="md:hidden bg-background/98 backdrop-blur-md border-b border-border">
           <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-5">
             {navItems.map((item) => (
               <Link key={item.path} to={item.path}

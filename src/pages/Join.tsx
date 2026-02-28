@@ -138,7 +138,7 @@ export default function Join() {
 
                 <button type="submit" disabled={status === "loading"}
                   className="inline-flex items-center gap-2 font-body font-semibold text-xs tracking-widest uppercase px-8 py-3 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50"
-                  style={{ background: "hsl(28 100% 55%)", color: "hsl(20 18% 5%)" }}>
+                  style={{ background: "hsl(28 100% 55%)", color: "white" }}>
                   {status === "loading" ? "Submitting..." : <> Join ISA <ArrowRight size={13} /> </>}
                 </button>
               </form>

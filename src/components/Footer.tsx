@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border mt-24" style={{ background: "hsl(20 14% 7%)" }}>
+    <footer className="border-t border-border mt-24 bg-muted">
       <div className="max-w-7xl mx-auto px-6 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 

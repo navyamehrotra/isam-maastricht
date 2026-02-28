@@ -118,7 +118,7 @@ export default function Index() {
 
         {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-          style={{ background: "linear-gradient(to top, hsl(20 18% 5%), transparent)" }} />
+          style={{ background: "linear-gradient(to top, hsl(var(--background)), transparent)" }} />
       </section>
 
       {/* ── Ashoka Chakra Scroll ── */}
@@ -172,7 +172,7 @@ export default function Index() {
       {/* ── Join Banner ── */}
       <section className="pb-28 max-w-7xl mx-auto px-6">
         <div data-reveal className="relative overflow-hidden rounded-2xl border border-border p-12 md:p-16 text-center"
-          style={{ background: "linear-gradient(135deg, hsl(20 14% 9%), hsl(25 14% 11%))" }}>
+          style={{ background: "linear-gradient(135deg, hsl(var(--muted)), hsl(var(--muted)))" }}>
           {/* Background mandala */}
           <div className="absolute right-[-80px] top-[-80px] pointer-events-none opacity-10">
             <Mandala size={360} opacity={1} />

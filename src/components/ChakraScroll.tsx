@@ -116,7 +116,7 @@ function AshokaChakraSVG({ rotation, activeIndex, progress }: {
         {spokes.map((s, i) => (
           <line key={`spoke-${i}`}
             x1={s.x1} y1={s.y1} x2={s.x2} y2={s.y2}
-            stroke={s.lit ? activeColor : "hsl(35 30% 90%)"}
+            stroke={s.lit ? activeColor : "hsl(20 25% 20%)"}
             strokeWidth={s.lit ? "2.5" : "1"}
             strokeOpacity={s.lit ? 0.95 : 0.18}
             filter={s.glow ? "url(#spk-glow)" : undefined}
@@ -127,7 +127,7 @@ function AshokaChakraSVG({ rotation, activeIndex, progress }: {
         {petals.map((p, i) => (
           <circle key={`petal-${i}`}
             cx={p.cx} cy={p.cy} r="5"
-            fill={p.lit ? activeColor : "hsl(35 30% 90%)"}
+            fill={p.lit ? activeColor : "hsl(20 25% 20%)"}
             fillOpacity={p.lit ? 0.85 : 0.12}
           />
         ))}
@@ -140,7 +140,7 @@ function AshokaChakraSVG({ rotation, activeIndex, progress }: {
           const lit = spokes[i].lit;
           return (
             <circle key={`tip-${i}`} cx={x} cy={y} r="4"
-              fill={lit ? activeColor : "hsl(35 30% 90%)"}
+              fill={lit ? activeColor : "hsl(20 25% 20%)"}
               fillOpacity={lit ? 0.9 : 0.15}
             />
           );

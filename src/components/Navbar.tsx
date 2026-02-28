@@ -31,13 +31,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          {/* Miniature Ashoka Chakra */}
-          <div className="relative w-9 h-9 flex items-center justify-center">
-            <div className="absolute inset-0 rounded-full border-2 border-primary/60 animate-[mandala-spin_8s_linear_infinite]" />
-            <div className="w-5 h-5 rounded-full bg-primary/20 border border-primary/60 flex items-center justify-center">
-              <div className="w-1.5 h-1.5 rounded-full bg-primary" />
-            </div>
-          </div>
+          <img src="/isa-logo.jpg" alt="ISA logo" className="h-10 w-10 object-contain rounded-full" />
           <div>
             <span className="font-display font-bold text-foreground text-sm leading-none block">ISA</span>
             <span className="font-body text-muted-foreground text-xs tracking-widest uppercase leading-none">Maastricht</span>

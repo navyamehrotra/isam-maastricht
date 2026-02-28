@@ -1,33 +1,11 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Users, Star, Calendar, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Mandala from "@/components/Mandala";
+import ChakraScroll from "@/components/ChakraScroll";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-
-const pillars = [
-  {
-    icon: Users,
-    title: "Community",
-    desc: "A warm, welcoming space for every Indian student navigating life in the Netherlands.",
-  },
-  {
-    icon: Star,
-    title: "Culture",
-    desc: "Diwali, Holi, Independence Day — we keep the traditions alive, thousands of miles from home.",
-  },
-  {
-    icon: Calendar,
-    title: "Events",
-    desc: "From cultural nights to career panels, our calendar is always full of things to look forward to.",
-  },
-  {
-    icon: Sparkles,
-    title: "Growth",
-    desc: "Workshops, networking, and mentorship to help you thrive academically and professionally.",
-  },
-];
 
 const upcomingEvents = [
   {
@@ -143,31 +121,11 @@ export default function Index() {
           style={{ background: "linear-gradient(to top, hsl(20 18% 5%), transparent)" }} />
       </section>
 
-      {/* ── What We're About ── */}
-      <section className="py-28 max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16" data-reveal>
-          <p className="section-label mb-4">What We're About</p>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-foreground">
-            Four things we stand for
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {pillars.map((p, i) => (
-            <div key={p.title} data-reveal data-delay={`${i * 100 + 100}` as any}
-              className="bg-card border border-border rounded-xl p-7 card-hover">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-5"
-                style={{ background: "hsl(28 100% 55% / 0.1)" }}>
-                <p.icon size={18} style={{ color: "hsl(28 100% 55%)" }} />
-              </div>
-              <p className="font-display font-bold text-foreground text-lg mb-2">{p.title}</p>
-              <p className="font-body text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* ── Ashoka Chakra Scroll ── */}
+      <ChakraScroll />
 
       {/* ── Indian flag stripe divider ── */}
-      <div className="max-w-7xl mx-auto px-6 mb-28">
+      <div className="max-w-7xl mx-auto px-6 mb-28 mt-8">
         <div className="flex h-px gap-0 overflow-hidden rounded-full opacity-30" data-reveal>
           <div className="flex-1" style={{ background: "hsl(28 100% 55%)" }} />
           <div className="flex-1 bg-white/50" />

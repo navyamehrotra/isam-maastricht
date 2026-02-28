@@ -59,6 +59,10 @@ export default function Footer() {
                 className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
                 WhatsApp Community
               </a>
+              <a href="https://www.tiktok.com/@isa.maastricht" target="_blank" rel="noopener noreferrer"
+                className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                TikTok
+              </a>
             </div>
           </div>
         </div>

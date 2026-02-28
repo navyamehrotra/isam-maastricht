@@ -1,0 +1,80 @@
+import { Link } from "react-router-dom";
+
+export default function Footer() {
+  return (
+    <footer className="border-t border-border mt-24" style={{ background: "hsl(20 14% 7%)" }}>
+      <div className="max-w-7xl mx-auto px-6 py-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+          {/* Brand */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-9 h-9 rounded-full border-2 border-primary/50 flex items-center justify-center">
+                <div className="w-3 h-3 rounded-full bg-primary/80" />
+              </div>
+              <div>
+                <p className="font-display font-bold text-foreground text-sm">ISAM</p>
+                <p className="font-body text-muted-foreground text-xs tracking-widest uppercase">Maastricht</p>
+              </div>
+            </div>
+            <p className="font-body text-muted-foreground text-sm leading-relaxed">
+              Indian Student Association Maastricht — your home away from home at Maastricht University.
+            </p>
+            {/* Indian flag stripe accent */}
+            <div className="flex gap-1 h-1 w-16 overflow-hidden rounded-full">
+              <div className="flex-1 bg-[hsl(28_100%_55%)]" />
+              <div className="flex-1 bg-white/20" />
+              <div className="flex-1 bg-[hsl(135_55%_30%)]" />
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="space-y-4">
+            <p className="section-label">Navigate</p>
+            <div className="flex flex-col gap-2">
+              {[
+                { label: "Home", path: "/" },
+                { label: "About", path: "/about" },
+                { label: "Events", path: "/events" },
+                { label: "Team", path: "/team" },
+                { label: "Join", path: "/join" },
+              ].map((item) => (
+                <Link key={item.path} to={item.path}
+                  onClick={() => window.scrollTo({ top: 0, behavior: "instant" })}
+                  className="font-body text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Connect */}
+          <div className="space-y-4">
+            <p className="section-label">Connect</p>
+            <div className="flex flex-col gap-2">
+              <a href="#" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                Instagram
+              </a>
+              <a href="#" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                WhatsApp Community
+              </a>
+              <a href="#" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-border mt-10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-3">
+          <p className="font-body text-xs text-muted-foreground">
+            © {new Date().getFullYear()} Indian Student Association Maastricht. All rights reserved.
+          </p>
+          <p className="font-body text-xs text-muted-foreground">
+            Celebrating culture, building community.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

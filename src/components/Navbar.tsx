@@ -51,11 +51,6 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-          <Link to="/join"
-            className="font-body text-xs tracking-widest uppercase px-5 py-2 border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-200 rounded-lg"
-          >
-            Join Us
-          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -77,9 +72,6 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <Link to="/join" className="font-body text-sm tracking-widest uppercase text-primary">
-              Join Us
-            </Link>
           </div>
         </div>
       )}

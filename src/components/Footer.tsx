@@ -51,14 +51,13 @@ export default function Footer() {
           <div className="space-y-4">
             <p className="section-label">Connect</p>
             <div className="flex flex-col gap-2">
-              <a href="#" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://www.instagram.com/isa.maastricht/" target="_blank" rel="noopener noreferrer"
+                className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
                 Instagram
               </a>
-              <a href="#" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
+              <a href="https://chat.whatsapp.com/LMCVspLe7EtEWjXa2ubmyf" target="_blank" rel="noopener noreferrer"
+                className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
                 WhatsApp Community
-              </a>
-              <a href="#" className="font-body text-sm text-muted-foreground hover:text-primary transition-colors">
-                LinkedIn
               </a>
             </div>
           </div>

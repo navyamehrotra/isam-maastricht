@@ -40,17 +40,26 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <Link key={item.path} to={item.path}
-              className={`font-body text-xs tracking-widest uppercase transition-colors duration-200 ${
-                location.pathname === item.path
-                  ? "text-primary"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) =>
+            item.path === "/join" ? (
+              <Link key={item.path} to={item.path}
+                className="font-body text-xs tracking-widest uppercase px-5 py-2 rounded-lg transition-all duration-200 hover:opacity-90"
+                style={{ background: "hsl(28 100% 55%)", color: "hsl(20 18% 5%)" }}
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <Link key={item.path} to={item.path}
+                className={`font-body text-xs tracking-widest uppercase transition-colors duration-200 ${
+                  location.pathname === item.path
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {item.label}
+              </Link>
+            )
+          )}
         </div>
 
         {/* Mobile toggle */}

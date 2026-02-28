@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <img src="/isa-logo.jpg" alt="ISA logo" className="h-10 w-10 object-contain rounded-full" />
+              <img src="/isa-logo.png" alt="ISA logo" className="h-10 w-10 object-contain rounded-full" />
               <div>
                 <p className="font-display font-bold text-foreground text-sm">ISA</p>
                 <p className="font-body text-muted-foreground text-xs tracking-widest uppercase">Maastricht</p>

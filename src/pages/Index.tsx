@@ -48,14 +48,18 @@ export default function Index() {
 
       {/* ── Hero ── */}
       <section className="relative min-h-screen flex items-end overflow-hidden" style={{ clipPath: "inset(0)" }}>
-        {/* Parallax background glow */}
+        {/* Parallax background glow — Holi colours */}
         <div ref={bgRef} className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-[120px] opacity-20"
-            style={{ background: "radial-gradient(circle, hsl(28 100% 55%), transparent)" }} />
-          <div className="absolute top-1/3 right-1/4 w-64 h-64 rounded-full blur-[90px] opacity-15"
-            style={{ background: "radial-gradient(circle, hsl(135 55% 30%), transparent)" }} />
-          <div className="absolute bottom-1/4 right-1/3 w-80 h-80 rounded-full blur-[100px] opacity-10"
-            style={{ background: "radial-gradient(circle, hsl(43 85% 52%), transparent)" }} />
+          <div className="absolute top-[10%] left-[10%] w-[28rem] h-[28rem] rounded-full blur-[140px] opacity-25"
+            style={{ background: "radial-gradient(circle, hsl(320 70% 72%), transparent)" }} />
+          <div className="absolute top-[20%] right-[15%] w-80 h-80 rounded-full blur-[120px] opacity-25"
+            style={{ background: "radial-gradient(circle, hsl(195 80% 68%), transparent)" }} />
+          <div className="absolute top-[55%] left-[35%] w-72 h-72 rounded-full blur-[100px] opacity-20"
+            style={{ background: "radial-gradient(circle, hsl(150 60% 60%), transparent)" }} />
+          <div className="absolute bottom-[15%] right-[25%] w-64 h-64 rounded-full blur-[110px] opacity-20"
+            style={{ background: "radial-gradient(circle, hsl(45 90% 65%), transparent)" }} />
+          <div className="absolute bottom-[30%] left-[15%] w-56 h-56 rounded-full blur-[100px] opacity-15"
+            style={{ background: "radial-gradient(circle, hsl(270 60% 72%), transparent)" }} />
         </div>
 
         {/* Mandala — decorative right side */}
@@ -73,11 +77,16 @@ export default function Index() {
               height: `${4 + (i % 3) * 3}px`,
               left: `${10 + i * 11}%`,
               bottom: `${15 + (i % 4) * 12}%`,
-              background: i % 3 === 0
-                ? "hsl(28 100% 55%)"
-                : i % 3 === 1
-                ? "hsl(43 85% 52%)"
-                : "hsl(135 55% 30%)",
+              background: [
+                "hsl(320 70% 65%)",
+                "hsl(195 80% 60%)",
+                "hsl(150 60% 50%)",
+                "hsl(45 90% 58%)",
+                "hsl(270 55% 65%)",
+                "hsl(28 90% 58%)",
+                "hsl(195 80% 60%)",
+                "hsl(320 70% 65%)",
+              ][i],
               animation: `particle-drift ${8 + i * 2}s ${i * 1.2}s ease-in-out infinite`,
               opacity: 0,
             }}
@@ -172,7 +181,7 @@ export default function Index() {
       {/* ── Join Banner ── */}
       <section className="pb-28 max-w-7xl mx-auto px-6">
         <div data-reveal className="relative overflow-hidden rounded-2xl border border-border p-12 md:p-16 text-center"
-          style={{ background: "linear-gradient(135deg, hsl(var(--muted)), hsl(var(--muted)))" }}>
+          style={{ background: "linear-gradient(135deg, hsla(195, 50%, 94%, 0.6), hsla(300, 40%, 95%, 0.4), hsla(150, 40%, 94%, 0.5))" }}>
           {/* Background mandala */}
           <div className="absolute right-[-80px] top-[-80px] pointer-events-none opacity-10">
             <Mandala size={360} opacity={1} />

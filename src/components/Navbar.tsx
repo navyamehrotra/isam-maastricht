@@ -17,8 +17,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 border-b bg-background"
-      style={{ borderColor: "hsl(30 6% 88%)" }}
+      className="fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md"
+      style={{ borderColor: "hsl(180 10% 88%)", background: "hsla(180, 20%, 97%, 0.85)" }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-14">
 
@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t bg-background" style={{ borderColor: "hsl(30 6% 88%)" }}>
+        <div className="md:hidden border-t backdrop-blur-md" style={{ borderColor: "hsl(180 10% 88%)", background: "hsla(180, 20%, 97%, 0.92)" }}>
           <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col gap-4">
             {navItems.map((item) => (
               <Link

@@ -6,11 +6,11 @@
 
 @layer base {
   :root {
-    --background: 30 10% 97%;
-    --foreground: 20 12% 10%;
+    --background: 180 20% 97%;
+    --foreground: 210 18% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 12% 10%;
+    --card: 180 12% 99%;
+    --card-foreground: 210 18% 12%;
 
     --primary: 24 82% 48%;
     --primary-foreground: 0 0% 100%;
@@ -23,11 +23,11 @@
     --secondary: 150 48% 28%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 30 8% 93%;
-    --muted-foreground: 20 6% 46%;
+    --muted: 180 14% 93%;
+    --muted-foreground: 200 8% 42%;
 
-    --border: 30 6% 88%;
-    --input: 30 6% 88%;
+    --border: 180 10% 88%;
+    --input: 180 10% 88%;
     --ring: 24 82% 48%;
 
     --radius: 0.75rem;
@@ -38,11 +38,19 @@
   * { @apply border-border; box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
+    background:
+      radial-gradient(ellipse 80% 60% at 15% 20%, hsla(300, 60%, 88%, 0.35), transparent),
+      radial-gradient(ellipse 70% 50% at 85% 15%, hsla(195, 70%, 88%, 0.4), transparent),
+      radial-gradient(ellipse 60% 50% at 50% 50%, hsla(150, 55%, 88%, 0.3), transparent),
+      radial-gradient(ellipse 50% 40% at 75% 75%, hsla(45, 80%, 90%, 0.25), transparent),
+      radial-gradient(ellipse 60% 45% at 20% 80%, hsla(210, 60%, 90%, 0.3), transparent),
+      hsl(var(--background));
+    background-attachment: fixed;
   }
   h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; }
   a { text-decoration: none; }
@@ -67,7 +75,7 @@
   .card-hover:hover {
     border-color: hsl(var(--primary) / 0.35);
     transform: translateY(-3px);
-    box-shadow: 0 10px 36px hsl(24 82% 48% / 0.10);
+    box-shadow: 0 10px 36px hsl(200 50% 60% / 0.12);
   }
 
   .gradient-text {

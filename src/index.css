@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,23 +6,30 @@
 
 @layer base {
   :root {
-    --background: 35 28% 91%;
-    --foreground: 20 25% 12%;
-    --card: 35 25% 95%;
-    --card-foreground: 20 25% 12%;
-    --primary: 28 100% 50%;
+    --background: 30 10% 97%;
+    --foreground: 20 12% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 12% 10%;
+
+    --primary: 24 82% 48%;
     --primary-foreground: 0 0% 100%;
-    --gold: 43 85% 45%;
-    --accent: 43 85% 45%;
+
+    --gold: 43 70% 44%;
+    --accent: 43 70% 44%;
     --accent-foreground: 0 0% 100%;
-    --green: 135 55% 28%;
-    --secondary: 135 55% 28%;
+
+    --green: 150 48% 28%;
+    --secondary: 150 48% 28%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 35 18% 85%;
-    --muted-foreground: 25 12% 42%;
-    --border: 30 14% 80%;
-    --input: 30 14% 80%;
-    --ring: 28 100% 50%;
+
+    --muted: 30 8% 93%;
+    --muted-foreground: 20 6% 46%;
+
+    --border: 30 6% 88%;
+    --input: 30 6% 88%;
+    --ring: 24 82% 48%;
+
     --radius: 0.75rem;
   }
 }
@@ -33,21 +40,22 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
-    display: block;
   }
-  h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+  h1, h2, h3, h4 { font-family: 'DM Serif Display', serif; }
   a { text-decoration: none; }
 }
 
 @layer utilities {
-  .font-display { font-family: 'Playfair Display', serif; }
+  .font-display { font-family: 'DM Serif Display', serif; }
   .font-body    { font-family: 'Inter', sans-serif; }
 
   .section-label {
     font-family: 'Inter', sans-serif;
     font-size: 0.68rem;
-    letter-spacing: 0.22em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: hsl(var(--primary));
     font-weight: 600;
@@ -57,13 +65,13 @@
     transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
   .card-hover:hover {
-    border-color: hsl(var(--primary) / 0.45);
-    transform: translateY(-4px);
-    box-shadow: 0 12px 40px hsl(28 100% 55% / 0.14);
+    border-color: hsl(var(--primary) / 0.35);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 36px hsl(24 82% 48% / 0.10);
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, hsl(28 100% 62%), hsl(43 85% 58%));
+    background: linear-gradient(135deg, hsl(24 82% 52%), hsl(43 70% 50%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

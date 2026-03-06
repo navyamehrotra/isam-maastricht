@@ -16,38 +16,11 @@ interface Event {
 
 const upcoming: Event[] = [
   {
-    date: "15",
+    date: "22",
     month: "Mar",
-    title: "Holi Celebration 2025",
+    title: "Holi Celebration 2026",
     desc: "Our annual Holi event — colours, music, traditional sweets, and the best energy of the year. Open to everyone.",
-    location: "Maastricht City Centre",
-    tag: "Cultural",
-    tagColor: "hsl(28 100% 55%)",
-  },
-  {
-    date: "28",
-    month: "Mar",
-    title: "Startup Stories: India Edition",
-    desc: "Three Indian founders based in the Netherlands share their journey. Q&A and networking to follow.",
-    location: "Maastricht University, UM Campus",
-    tag: "Career",
-    tagColor: "hsl(43 85% 52%)",
-  },
-  {
-    date: "10",
-    month: "Apr",
-    title: "Curry & Conversations",
-    desc: "Our monthly social — home-cooked food, new people, good talks. All are welcome.",
-    location: "TBA",
-    tag: "Social",
-    tagColor: "hsl(135 55% 35%)",
-  },
-  {
-    date: "26",
-    month: "Apr",
-    title: "Bollywood Night",
-    desc: "Dance, music, and an evening full of Bollywood classics. Our biggest social event of the semester.",
-    location: "Muziekgieterij, Maastricht",
+    location: "Cavo Maastricht",
     tag: "Cultural",
     tagColor: "hsl(28 100% 55%)",
   },
@@ -55,19 +28,9 @@ const upcoming: Event[] = [
 
 const past: Event[] = [
   {
-    date: "26",
-    month: "Jan",
-    title: "Republic Day Celebration",
-    desc: "Marking India's Republic Day with a flag hoisting, cultural performances, and community dinner.",
-    location: "Maastricht University",
-    tag: "Cultural",
-    tagColor: "hsl(28 100% 55%)",
-    past: true,
-  },
-  {
     date: "12",
     month: "Nov",
-    title: "Diwali 2024",
+    title: "Diwali 2025",
     desc: "Our biggest event of the year — lights, rangoli, Indian food, and a night to remember.",
     location: "City Centre",
     tag: "Cultural",

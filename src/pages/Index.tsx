@@ -10,7 +10,7 @@ import { useScrollReveal } from "@/hooks/useScrollReveal";
 const upcomingEvents = [
   {
     date: "15 Mar",
-    title: "Holi Celebration 2025",
+    title: "Holi Celebration 2026",
     desc: "Join us for colours, music, and good food as we celebrate the festival of spring together.",
     tag: "Cultural",
   },
